@@ -1,0 +1,241 @@
+html {
+    margin: 0px;
+}
+body {
+    // border: 2px solid rgb(34, 178, 51);
+    margin: 0px;
+    background-color: rgb(137, 137, 137);
+    
+    p {
+        margin: 0px;
+    }
+}
+.board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(137, 137, 137);
+    // border: 9px solid firebrick;
+
+}
+
+.result{
+    // border: 2.001px solid rgb(36, 205, 205);
+    border-radius: 0px 0px 40px 40px;
+    background: linear-gradient(rgb(255, 213, 0), rgb(156, 130, 0));
+    // margin-top: 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        // border: 2px solid saddlebrown;
+        width: fit-content;
+        margin: auto;
+        margin-top: 14px;
+        color: white;
+    }
+    
+    p:nth-child(3) {
+        // border:  2px solid rgb(255, 0, 238);
+        font-size: larger;
+        font-weight: bold;
+    }
+    p:nth-child(4) {
+        // border: 2px solid rgb(255, 0, 238);
+        color: rgb(97, 97, 97);
+        font-weight: 300;
+        width: 270px;
+        word-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .resultVal {
+        color: rgb(97, 97, 97);
+        // border: 2px solid rgb(34, 178, 53);
+        width: fit-content;
+        margin: auto;
+        margin-top: 42px;
+    }
+    
+    .score {
+        // border: 2px solid rgb(34, 178, 53);
+        border-radius: 50%;
+        width: 90px;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+        background: linear-gradient( rgb(255, 213, 0), rgb(156, 130, 0));
+        color: rgb(116, 112, 112);
+        font-weight: bold;
+        
+        span {
+            font-size: 64px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+
+.summary {
+    // border: 2px solid skyblue;
+    width: 82%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    header {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(54, 54, 54);
+    }
+
+    .grades {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        div {
+            // border: 2px solid darkblue;
+            padding: 10px 3px;
+            border-radius: 13px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+
+            span:nth-child(1) {
+                font-weight: bold;
+            }
+
+            span:nth-child(2) {
+                margin-left: 4px;
+                color: rgb(97, 97, 97);
+            }
+            
+        }
+
+        div:nth-child(1) {
+            background-color: rgb(255, 180, 180);
+
+            p {
+                width:85%;
+                display: flex;
+                justify-content: space-between;
+                // border: 2px solid rebeccapurple;
+                font-weight: bold;
+                color: rgb(249, 42, 42);
+                // margin-right: 7%;
+
+                .group {
+                    // border: 2px solid rgb(252, 57, 22);
+                    margin-right: 3%;
+                    
+                    span:nth-child(1) {
+                        // border: 2px solid rgb(17, 0, 255);
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+        div:nth-child(2) {
+            background-color: rgb(221, 215, 164);
+
+            p {
+                width: 85%;
+                // border: 2px solid rgb(8, 239, 15);
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                color: rgb(252, 252, 7);
+
+                .group {
+                    // border: 2px solid rgb(252, 57, 22);
+                    margin-right: 3%;
+
+                    span:nth-child(1) {
+                        // border: 2px solid rgb(17, 0, 255);
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+        div:nth-child(3) {
+            background-color: rgb(194, 255, 194);
+
+            p {
+                width: 85%;
+                // border: 2px solid rgb(8, 239, 15);
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                color: green;
+
+                .group {
+                    // border: 2px solid rgb(252, 57, 22);
+                    margin-right: 3%;
+
+                    span:nth-child(1) {
+                        // border: 2px solid rgb(17, 0, 255);
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+        div:nth-child(4) {
+            background-color: rgb(188, 188, 255);
+            // border-left: ;
+
+            p {
+                width: 85%;
+                // border: 2px solid rgb(8, 239, 15);
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                color: blue;
+
+                .group {
+                    // border: 2px solid rgb(252, 57, 22);
+                    margin-right: 3%;
+
+                    span:nth-child(1) {
+                        // border: 2px solid rgb(17, 0, 255);
+                        color: black;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    button {
+        display: block;
+        // border: 2px solid firebrick;
+        border: none;
+        border-radius: 20px;
+        width: 80%;
+        padding: 7px;
+        margin: auto;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(200, 130, 0);
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+
